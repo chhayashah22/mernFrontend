@@ -6,10 +6,11 @@ export default defineConfig({
     tailwindcss(),
   ],
     server:{
+       allowedHosts: ['mernfrontend-ix6x.onrender.com'], 
       host: '0.0.0.0', // Bind to all network interfaces
-      port: process.env.PORT || 3000,
+      port: 5173,  
       strictPort:true,
-      https:false, // Use Render's port or default to 10000
+       // Use Render's port or default to 10000
       proxy : {
         "/api" : "https://api-2qzi.onrender.com",
       },
