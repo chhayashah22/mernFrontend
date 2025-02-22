@@ -7,8 +7,8 @@ export default defineConfig({
   ],
     server:{
        allowedHosts: ['mernfrontend-ix6x.onrender.com'], 
-      host: '0.0.0.0', // Bind to all network interfaces
-      port: 5173,  
+      
+      https:true, 
       strictPort:true,
        // Use Render's port or default to 10000
       proxy : {
