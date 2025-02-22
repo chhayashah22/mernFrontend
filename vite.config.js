@@ -7,7 +7,8 @@ export default defineConfig({
   ],
     server:{
       host: '0.0.0.0', // Bind to all network interfaces
-      port: process.env.PORT || 10000, // Use Render's port or default to 10000
+      port: process.env.PORT || 10000,
+      https:true, // Use Render's port or default to 10000
       proxy : {
         "/api" : "https://api-2qzi.onrender.com",
       },
