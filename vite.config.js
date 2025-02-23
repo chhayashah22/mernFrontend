@@ -6,7 +6,7 @@ export default defineConfig({
     tailwindcss(),
   ],
     server:{
-       allowedHosts: ['https://mern-frontend-9164.vercel.app/'], 
+ 
       port:5173,
       
       
