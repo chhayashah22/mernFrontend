@@ -2,7 +2,8 @@ import { Link, useNavigate } from "react-router-dom";
 import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import api from "../api";
+
+import axios from "axios";
 export default function Login() {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({ email: "", password: "" });
@@ -20,7 +21,7 @@ export default function Login() {
     console.log("Form Data:", formData);
 
     try {
-      const response = await api.post("/api/login/user-login", formData);
+      const response = await axios.post("/api/login/user-login", formData);
       console.log(response);
       const { token, name: Username } = response.data;
 
