@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
+import {HashRouter, Routes, Route, Navigate } from "react-router-dom";
 import LandingPage from "./components/Landing";
 import Login from './components/Login';
 import DashboardLayout from './components/DashboardLayout';
