@@ -1,8 +1,13 @@
 {
     "rewrites": [
-        {
-            "source": "/api/(.*)",
-            "destination": "https://api-2qzi.onrender.com/api/$1"
-        }
+      {
+        "source": "/api/:path*",
+        "destination": "https://api-2qzi.onrender.com/api/:path*"
+      },
+      {
+        "source": "/(.*)",
+        "destination": "/index.html"
+      }
     ]
-}
+  }
+  
