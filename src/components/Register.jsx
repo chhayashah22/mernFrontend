@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { ToastContainer ,toast} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
+import { Link } from "react-router-dom";
 export default function Register() {
   const [formData, setFormData] = useState({
     name: "",
@@ -101,7 +102,7 @@ export default function Register() {
             </button>
           </form>
           <p className="text-center text-black-600 mt-4">
-            Already have an account? <a href="/login" className="text-orange-500">Login</a>
+            Already have an account? <Link to="/login" className="text-orange-500">Login</Link>
           </p>
         </div>
       </div>
