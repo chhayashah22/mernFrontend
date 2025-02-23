@@ -6,10 +6,10 @@ export default defineConfig({
     tailwindcss(),
   ],
     server:{
-      //  allowedHosts: ['mernfrontend-ix6x.onrender.com'], 
+       allowedHosts: ['https://mern-frontend-9164.vercel.app/'], 
       port:5173,
       
-       // Use Render's port or default to 10000
+      
       proxy : {
         "/api" : "https://api-2qzi.onrender.com",
       },
