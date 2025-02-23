@@ -53,9 +53,9 @@ export default function Login() {
     <>
       <ToastContainer />
       <div className="flex min-h-screen items-center justify-center bg-gray-100">
-        <div className="flex flex-col md:flex-row w-full max-w-4xl shadow-lg bg-white rounded-lg overflow-hidden">
+        <div className="flex flex-col md:flex-row w-full max-w-4xl shadow-lg bg-white rounded-lg overflow-hidden m-4">
           {/* Image Section */}
-          <div className="hidden md:block md:w-1/2">
+          <div className="flex flex-col md:block md:w-1/2">
             <img
               src="https://clipart-library.com/2023/ngo-nongovernmental-organization-serve-specific-social-template-hand-drawn-illustration_2175-7887.jpg"
               alt="NGO"

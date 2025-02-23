@@ -7,7 +7,7 @@ export default function Navbar({ visible, setVisible }) {
 
     return (
         <>
-            <div className='w-full sm:w-[1050px] flex justify-between sm:justify-end items-center shadow-md fixed bg-white  h-[60px] px-4'>
+            <div className='w-full sm:w-[1045px] flex justify-between sm:justify-end items-center shadow-md fixed bg-white  h-[60px] px-4 z-20'>
                 {/* Menu Icon - Only Visible on Mobile */}
                 <div className='block sm:hidden p-4' onClick={() => setVisible(!visible)}>
                     <CgMenuGridO />

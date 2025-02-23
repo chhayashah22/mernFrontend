@@ -18,7 +18,7 @@ export default function DashboardLayout() {
         <Navbar visible={visible} setVisible={setVisible} />
 
         {/* Dynamic Content */}
-        <div className="flex-1 p-4 bg-gray-100 overflow-hidden  mt-0 md:mt-16">
+        <div className="flex-1 p-4 bg-gray-100 overflow-hidden  mt-12 sm:mt-16 ">
           <Outlet />
         </div>
       </div>

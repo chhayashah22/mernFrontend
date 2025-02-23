@@ -19,13 +19,13 @@ import { Link,NavLink} from 'react-router-dom';
 
         <h1 className='p-4 border-4 border-blue-600 rounded-lg '>Logo</h1>
         <Link className="p-4 bg-orange-50 rounded-md text-orange-500 block">General</Link>
-        <NavLink  to="/dashboard" end={true}  className={({ isActive }) => `p-4 flex items-center gap-2 rounded-md  ${isActive ? "bg-orange-500 text-white" :"text-black"
+        <NavLink  to="/dashboard" end={true}  onClick={() => setVisible(!visible)} className={({ isActive }) => `p-4 flex items-center gap-2 rounded-md  ${isActive ? "bg-orange-500 text-white" :"text-black"
           }`} ><FaDesktop /> Dashboard</NavLink>
 
-      <NavLink to="/dashboard/transactions" end={true}  className={({ isActive }) => `p-4 flex items-center gap-2 rounded-md  ${isActive ? "bg-orange-500 text-white" : "text-black"
+      <NavLink to="/dashboard/transactions" end={true} onClick={() => setVisible(!visible)} className={({ isActive }) => `p-4 flex items-center gap-2 rounded-md  ${isActive ? "bg-orange-500 text-white" : "text-black"
           }`} ><TfiMenuAlt/>Transaction</NavLink>
 
-      <NavLink to="/dashboard/starthere" end={true}  className={({ isActive }) => `p-4 flex items-center gap-2 rounded-md  ${isActive ? "bg-orange-500 text-white" : "text-black"
+      <NavLink to="/dashboard/starthere" end={true} onClick={() => setVisible(!visible)} className={({ isActive }) => `p-4 flex items-center gap-2 rounded-md  ${isActive ? "bg-orange-500 text-white" : "text-black"
           }`} ><FaArrowTurnDown />Start Here</NavLink>
 
       <NavLink to="/dashboard/faq"end={true}  className={({ isActive }) => `p-4 flex items-center gap-2 rounded-md  ${isActive ? "bg-orange-500 text-white" : "text-black"

@@ -10,7 +10,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 
 export default function Dashboard(){
-const shareText = "Check out this awesome website: https://ngo.com";
+const shareText = "Check out this awesome website: https://mern-frontend-hzei-git-main-chhayas-projects-d7e774f2.vercel.app";
   const copyToClipboard = () => {
     navigator.clipboard.writeText(shareText)
       .then(() => alert("Link copied to clipboard!"));
