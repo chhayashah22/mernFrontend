@@ -18,7 +18,7 @@ export default function DonateButton() {
 
       {/* Modal (Backdrop) */}
       {isOpen && (
-        <div className="fixed inset-0  bg-opacity-50 flex justify-center items-center z-10">
+        <div className="fixed inset-0  bg-opacity-50 flex justify-center items-center z-20">
           {/* Modal Content */}
           <div className="bg-white w-96 p-6 rounded-lg shadow-lg relative">
             {/* Close Button */}
